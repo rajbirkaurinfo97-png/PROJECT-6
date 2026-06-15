@@ -1,0 +1,18 @@
+2026-06-15 14:42:21,153 - INFO - Step 1: Loaded cleaned dataset (cleaned_sales.csv) with explicit dtypes for categorical columns.
+2026-06-15 14:56:53,920 - INFO - Step 2: Handled NaN values — filled PromoInterval missing entries with mode.
+2026-06-15 15:03:26,587 - INFO - Step 3: Encoded categorical variables using LabelEncoder (StoreType, Assortment, StateHoliday, PromoInterval).
+2026-06-15 15:09:46,730 - INFO - Step 4: Extracted date features (Year, Month, Day, WeekOfYear, IsWeekend, MonthPeriod).
+2026-06-15 15:28:40,492 - INFO - Step 5: Encoded MonthPeriod categorical feature into numeric values for model compatibility.
+2026-06-15 15:32:35,681 - INFO - Step 5: Encoded MonthPeriod categorical feature into numeric values for model compatibility.
+2026-06-15 15:48:32,901 - INFO - Step 1: Loaded cleaned dataset (cleaned_sales.csv) with explicit dtypes for categorical columns.
+2026-06-15 15:48:39,031 - INFO - Step 2: Handled NaN values — filled PromoInterval missing entries with mode.
+2026-06-15 15:48:44,748 - INFO - Step 3: Encoded categorical variables using LabelEncoder (StoreType, Assortment, StateHoliday, PromoInterval).
+2026-06-15 15:48:54,100 - INFO - Step 4: Extracted date features (Year, Month, Day, WeekOfYear, IsWeekend, MonthPeriod).
+2026-06-15 15:49:07,220 - INFO - Step 5: Encoded MonthPeriod categorical feature into numeric values for model compatibility.
+2026-06-15 16:07:21,867 - INFO - Step 6: Training RandomForestRegressor — large dataset, may take several minutes.
+2026-06-15 16:07:23,218 - INFO - Step 7: Final RandomForest pipeline trained on full dataset with 100 trees.
+2026-06-15 16:17:33,045 - INFO - Step 8: Built sklearn pipeline with RandomForestRegressor (100 trees).
+2026-06-15 16:17:33,045 - INFO - Step 9: Trained model and evaluated performance with RMSE and R².
+2026-06-15 16:37:56,633 - INFO - Step 10: Chose RMSE as loss function. RMSE={rmse:.2f}, R2={r2:.3f}
+2026-06-15 16:42:59,554 - INFO - Step 10: Conducted post-prediction analysis — explored feature importance and estimated confidence intervals using variability across Random Forest trees.
+2026-06-15 16:50:04,850 - INFO - Step 11: Serialized RandomForest pipeline and saved as random_forest_model_15-06-2026-16-50-03-917.pkl.

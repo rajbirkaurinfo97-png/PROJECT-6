@@ -1,0 +1,11 @@
+2026-06-15 13:51:33,968 - INFO - Step 1: Loaded raw datasets (train.csv, test.csv, store.csv).
+2026-06-15 13:51:33,969 - INFO - Step 2: Handled missing values in train, test, and store datasets.
+2026-06-15 13:51:33,969 - INFO - Step 3: Merged train with store, and test with store. Verified merged datasets are clean.
+2026-06-15 13:51:33,970 - INFO - Step 4: Completed univariate analysis for Sales, Customers, Promo, and StateHoliday.
+2026-06-15 13:51:33,970 - INFO - Step 5: Completed bivariate analysis for key variable relationships.
+2026-06-15 13:51:33,970 - INFO - Step 6: Created correlation heatmap for Sales, Customers, and other numerical features.
+2026-06-15 13:51:33,970 - INFO - Step 7: Completed multivariate analysis combining multiple categorical and numerical factors.
+2026-06-15 13:51:33,973 - INFO - Step 8: Generated pivot-style summary table for Holiday × Promo × Assortment.
+2026-06-15 13:51:33,974 - INFO - Step 9: Saved cleaned dataset as cleaned_sales.csv and verified successful save.
+2026-06-15 13:51:33,974 - INFO - Step 10: Provided business insights and answers to Task 1.1 guiding questions.
+2026-06-15 13:51:33,974 - INFO - Step 11: Logging completed for Notebook 1 (EDA).

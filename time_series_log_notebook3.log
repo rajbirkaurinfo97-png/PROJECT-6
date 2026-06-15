@@ -1,0 +1,14 @@
+2026-06-15 17:20:27,093 - INFO - Step 1: Initialized Notebook 3 - Time Series Analysis environment with required libraries.
+2026-06-15 17:26:26,788 - INFO - Step 2: Isolated Rossmann dataset into daily time series with datetime index.
+2026-06-15 17:27:59,112 - INFO - Step 3: Loaded cleaned_sales.csv with explicit dtypes to resolve DtypeWarning.
+2026-06-15 17:38:36,481 - INFO - Step 4: Checked stationarity using rolling statistics and ADF test.
+2026-06-15 17:49:27,839 - INFO - Step 5: Plotted ACF and PACF to analyze lag relationships in the time series.
+2026-06-15 17:57:02,301 - INFO - Step 6: Transformed time series into supervised learning format using {window_size}-day sliding window.
+2026-06-15 18:07:16,553 - INFO - Step 5: Completed Sliding Window Transformation (30-Day Lookback) — dataset reframed into supervised learning format with 912 samples, each linking past 30 days of sales to the next day's target.
+2026-06-15 18:07:26,506 - INFO - Step 5: Completed Sliding Window Transformation (30-Day Lookback) — dataset reframed into supervised learning format with 912 samples, each linking past 30 days of sales to the next day's target.
+2026-06-15 18:07:44,346 - INFO - Step 7: Completed Sliding Window Transformation (30-Day Lookback) — dataset reframed into supervised learning format with 912 samples, each linking past 30 days of sales to the next day's target.
+2026-06-15 18:19:56,087 - INFO - Step 8: Applied MinMaxScaler to feature matrix and target vector for stable model training.
+2026-06-15 18:30:22,301 - INFO - Step 7: ARIMA model built with order {order}. Model fitted successfully.
+2026-06-15 18:35:34,396 - INFO - Step 8: ARIMA Forecast visualization generated — actual sales vs forecasted sales plotted with confidence intervals for business interpretation.
+2026-06-15 18:46:59,445 - INFO - Notebook 9 completed: Time Series Analysis with ARIMA forecasting. Deep learning (LSTM/RNN) will be implemented in Notebook 4.
+2026-06-15 18:47:15,159 - INFO - Task 2.6 preprocessing complete: Time series isolated, stationarity confirmed (no differencing needed), autocorrelation checked, sliding window transformation applied, and dataset scaled to (-1,1). Ready for LSTM model building in Notebook 4.
