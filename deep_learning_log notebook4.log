@@ -1,0 +1,102 @@
+2026-06-15 19:46:38,833 - INFO - Step 8: Initialized Notebook 4 - Deep Learning LSTM environment with required libraries.
+2026-06-15 19:47:01,706 - INFO - Step 9: Loaded cleaned_sales.csv dataset successfully. Shape: (1017209, 18)
+2026-06-15 19:48:54,549 - INFO - Step 9: Loaded cleaned_sales.csv with explicit dtypes for categorical columns. Shape: (1017209, 18)
+2026-06-15 19:49:10,275 - INFO - Step 1: Initialized Notebook 4 - Deep Learning LSTM environment with required libraries.
+2026-06-15 19:49:19,032 - INFO - Step 2: Loaded cleaned_sales.csv dataset successfully. Shape: (1017209, 18)
+2026-06-15 19:49:34,943 - INFO - Step 3: Loaded cleaned_sales.csv with explicit dtypes for categorical columns. Shape: (1017209, 18)
+2026-06-15 19:51:09,985 - INFO - Step 4: Confirmed column data types:
+Store                          int64
+DayOfWeek                      int64
+Date                          object
+Sales                          int64
+Customers                      int64
+Open                           int64
+Promo                          int64
+StateHoliday                  object
+SchoolHoliday                  int64
+StoreType                     object
+Assortment                    object
+CompetitionDistance          float64
+CompetitionOpenSinceMonth    float64
+CompetitionOpenSinceYear     float64
+Promo2                         int64
+Promo2SinceWeek              float64
+Promo2SinceYear              float64
+PromoInterval                 object
+2026-06-15 19:53:12,433 - INFO - Step 5: Converted Date column to datetime format.
+2026-06-15 19:59:58,295 - INFO - Step 6: Selected relevant features for LSTM input. Target: Sales, Inputs: ['Promo', 'StateHoliday', 'SchoolHoliday', 'StoreType', 'Assortment', 'CompetitionDistance', 'CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2', 'Promo2SinceWeek', 'Promo2SinceYear', 'PromoInterval']
+2026-06-15 20:00:53,020 - INFO - Step 7: Applied LabelEncoder to categorical features (StateHoliday, StoreType, Assortment, PromoInterval).
+2026-06-15 20:03:15,098 - INFO - Step 8: Created sliding window supervised dataset with 1017179 samples. Feature shape: (1017179, 30), Target shape: (1017179,)
+2026-06-15 20:08:19,926 - INFO - Step 9: Scaled supervised dataset into (-1,1) range. Feature shape: (1017179, 30), Target shape: (1017179, 1)
+2026-06-15 20:12:45,963 - INFO - Step 10: Built two-layer LSTM Sequential model with 50 units each and Dense output layer.
+2026-06-16 00:51:50,609 - INFO - Step 11: Trained LSTM model with EarlyStopping (patience=5) and validation split=0.2.
+2026-06-16 00:51:51,352 - INFO - Step 12: Evaluation complete. Final Training Loss: 0.0040, Final Validation Loss: 0.0050
+2026-06-16 00:56:10,311 - INFO - Step 12: Evaluation complete. Final Training Loss: 0.0040, Final Validation Loss: 0.0050
+2026-06-16 01:06:44,307 - INFO - Step 13: Generated predictions and inverse transformed back to original sales units.
+2026-06-16 01:10:09,421 - INFO - Step 14: Visualized actual vs predicted sales for first 200 days.
+2026-06-16 01:12:34,655 - INFO - Step 15: Performance metrics calculated. RMSE=1340.85, MAE=812.91, R²=0.879
+2026-06-16 01:15:00,447 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2026-06-16 01:15:55,423 - INFO - Step 16: Serialized LSTM model as .h5 and registered with MLFlow for inference.
+2026-06-16 01:47:41,790 - INFO - Step 1: Initialized Notebook 4 - Deep Learning LSTM environment with required libraries.
+2026-06-16 01:47:45,894 - INFO - Step 2: Loaded cleaned_sales.csv dataset successfully. Shape: (1017209, 18)
+2026-06-16 01:47:49,993 - INFO - Step 3: Loaded cleaned_sales.csv with explicit dtypes for categorical columns. Shape: (1017209, 18)
+2026-06-16 01:47:50,012 - INFO - Step 4: Confirmed column data types:
+Store                          int64
+DayOfWeek                      int64
+Date                          object
+Sales                          int64
+Customers                      int64
+Open                           int64
+Promo                          int64
+StateHoliday                  object
+SchoolHoliday                  int64
+StoreType                     object
+Assortment                    object
+CompetitionDistance          float64
+CompetitionOpenSinceMonth    float64
+CompetitionOpenSinceYear     float64
+Promo2                         int64
+Promo2SinceWeek              float64
+Promo2SinceYear              float64
+PromoInterval                 object
+2026-06-16 01:47:50,268 - INFO - Step 5: Converted Date column to datetime format.
+2026-06-16 01:47:50,280 - INFO - Step 6: Selected relevant features for LSTM input. Target: Sales, Inputs: ['Promo', 'StateHoliday', 'SchoolHoliday', 'StoreType', 'Assortment', 'CompetitionDistance', 'CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2', 'Promo2SinceWeek', 'Promo2SinceYear', 'PromoInterval']
+2026-06-16 01:47:52,494 - INFO - Step 7: Applied LabelEncoder to categorical features (StateHoliday, StoreType, Assortment, PromoInterval).
+2026-06-16 01:47:55,081 - INFO - Step 8: Created sliding window supervised dataset with 1017179 samples. Feature shape: (1017179, 30), Target shape: (1017179,)
+2026-06-16 01:47:56,052 - INFO - Step 9: Scaled supervised dataset into (-1,1) range. Feature shape: (1017179, 30), Target shape: (1017179, 1)
+2026-06-16 01:47:56,338 - INFO - Step 10: Built two-layer LSTM Sequential model with 50 units each and Dense output layer.
+2026-06-16 13:03:00,252 - INFO - Step 1: Initialized Notebook 4 - Deep Learning LSTM environment with required libraries.
+2026-06-16 13:03:04,818 - INFO - Step 2: Loaded cleaned_sales.csv dataset successfully. Shape: (1017209, 18)
+2026-06-16 13:03:08,111 - INFO - Step 3: Loaded cleaned_sales.csv with explicit dtypes for categorical columns. Shape: (1017209, 18)
+2026-06-16 13:03:08,194 - INFO - Step 4: Confirmed column data types:
+Store                          int64
+DayOfWeek                      int64
+Date                          object
+Sales                          int64
+Customers                      int64
+Open                           int64
+Promo                          int64
+StateHoliday                  object
+SchoolHoliday                  int64
+StoreType                     object
+Assortment                    object
+CompetitionDistance          float64
+CompetitionOpenSinceMonth    float64
+CompetitionOpenSinceYear     float64
+Promo2                         int64
+Promo2SinceWeek              float64
+Promo2SinceYear              float64
+PromoInterval                 object
+2026-06-16 13:03:08,498 - INFO - Step 5: Converted Date column to datetime format.
+2026-06-16 13:03:08,511 - INFO - Step 6: Selected relevant features for LSTM input. Target: Sales, Inputs: ['Promo', 'StateHoliday', 'SchoolHoliday', 'StoreType', 'Assortment', 'CompetitionDistance', 'CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2', 'Promo2SinceWeek', 'Promo2SinceYear', 'PromoInterval']
+2026-06-16 13:03:10,040 - INFO - Step 7: Applied LabelEncoder to categorical features (StateHoliday, StoreType, Assortment, PromoInterval).
+2026-06-16 13:03:12,011 - INFO - Step 8: Created sliding window supervised dataset with 1017179 samples. Feature shape: (1017179, 30), Target shape: (1017179,)
+2026-06-16 13:03:15,864 - INFO - Step 9: Scaled supervised dataset into (-1,1) range. Feature shape: (1017179, 30), Target shape: (1017179, 1)
+2026-06-16 13:03:29,710 - INFO - Step 10: Built two-layer LSTM Sequential model with 50 units each and Dense output layer.
+2026-06-16 20:03:11,026 - INFO - Step 11: Trained LSTM model with EarlyStopping (patience=5) and validation split=0.2.
+2026-06-16 20:03:12,919 - INFO - Step 12: Evaluation complete. Final Training Loss: 0.0040, Final Validation Loss: 0.0052
+2026-06-16 20:09:24,728 - INFO - Step 13: Generated predictions and inverse transformed back to original sales units.
+2026-06-16 20:09:25,421 - INFO - Step 14: Visualized actual vs predicted sales for first 200 days.
+2026-06-16 20:09:25,634 - INFO - Step 15: Performance metrics calculated. RMSE=1335.17, MAE=831.39, R²=0.880
+2026-06-16 20:09:26,017 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2026-06-16 20:10:31,478 - INFO - Step 16: Serialized LSTM model as .h5 and registered with MLFlow for inference.
